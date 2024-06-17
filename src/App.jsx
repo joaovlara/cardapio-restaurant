@@ -1,12 +1,14 @@
-import { useState } from 'react'
 import './App.scss'
 
+import Hero from './components/hero/Index'
+import Filter from './components/filters/Index'
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <a href="https://vitejs.dev" target="_blank" />
+    <div className='app'>
+      <Hero />
+      <Filter />
     </div>
   )
 }
