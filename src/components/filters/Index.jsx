@@ -1,21 +1,23 @@
 import React from 'react';
-import { Container, ButtonGroup, Button, Form, Row, Col } from 'react-bootstrap';
+import { Container, Button, Form } from 'react-bootstrap';
 
 const Filter = () => {
   return (
     <section className="filter">
-      <Container>
-            <Button variant="secondary">Option 1</Button>
-            <Button variant="secondary">Option 2</Button>
-            <Button variant="secondary">Option 3</Button>
-            <Button variant="secondary">Option 4</Button>
-            <Button variant="secondary">Option 5</Button>
-            <Button variant="secondary">Option 6</Button>
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className="me-2"
-            />
+      <Container className="d-flex justify-content-around align-items-center py-3 ">
+          <Button className="me-2">Option 1</Button>
+          <Button className="me-2">Option 2</Button>
+          <Button className="me-2">Option 3</Button>
+          <Button className="me-2">Option 4</Button>
+          <Button className="me-2">Option 5</Button>
+          <Button className="me-2">Option 6</Button>
+        <Form className="d-flex w-50">
+          <Form.Control
+            type="text"
+            placeholder="Search"
+            className="w-90"
+          />
+        </Form>
       </Container>
     </section>
   );
