@@ -3,6 +3,7 @@ import './App.scss'
 import Hero from './components/hero/Index'
 import Filter from './components/filters/Index'
 import CardGrid from './components/card/Index'
+import Footer from './components/footer/Index'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Filter />
       <CardGrid />
+      <Footer />
     </div>
   )
 }

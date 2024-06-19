@@ -1,0 +1,22 @@
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+  
+    a {
+      color: #ffffff; 
+      text-decoration: none; 
+  
+      &:hover {
+        color: #adb5bd; 
+      }
+    }
+  
+    h5 {
+      margin-bottom: 15px; 
+    }
+  
+    p, ul {
+      margin-bottom: 0; 
+    }
+  }
+  
