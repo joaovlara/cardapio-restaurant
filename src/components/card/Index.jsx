@@ -16,15 +16,18 @@ const CardGrid = () => {
               <h2>{categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1)}</h2>
             </Col>
             {cardapio[categoriaKey].items.map((item) => (
-              <Col key={item.id} sm={12} md={6} lg={4} className="mb-4">
-                <Card>
+              <Col key={item.id} sm={12} md={6} lg={4}
+                className="mb-4">
+                <Card
+                  className={`${styles.customCard} rounded-0`}>
                   <Card.Img
                     variant="top"
                     src={img}
                     alt={item.nome}
                     className={styles.cardImg}
                   />
-                  <Card.Body>
+                  <Card.Body
+                    className={`{${styles.customCard}`}>
                     <Card.Title>{item.nome}</Card.Title>
                     <Card.Text>{item.descricao}</Card.Text>
                     <Card.Text className="text-muted">R${item.preco}</Card.Text>
@@ -38,7 +41,7 @@ const CardGrid = () => {
           </React.Fragment>
         ))}
       </Row>
-    </Container>
+    </Container >
   );
 }
 
