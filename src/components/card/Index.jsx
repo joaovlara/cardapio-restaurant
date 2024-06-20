@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import cardapio from "..//../data/cardapio";
+import styles from "./card.module.scss"
 
 const CardGrid = () => {
   return (
@@ -9,23 +10,22 @@ const CardGrid = () => {
       <Row>
         {Object.keys(cardapio).map((categoriaKey) => (
           <React.Fragment key={cardapio[categoriaKey].id}>
-            <Col sm={12} className="mb-4">
+            <Col sm={12}>
               <h2>{categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1)}</h2>
             </Col>
             {cardapio[categoriaKey].items.map((item) => (
-              <Col key={item.id} sm={12} md={6} lg={3} className="mb-4">
+              <Col key={item.id} sm={12} md={6} lg={4} className="mb-4">
                 <Card>
-                  <Card.Img 
-                    variant="top" 
-                    src="https://via.placeholder.com/100" 
-                    alt={item.nome} 
-                    className="card-img-top-custom"
+                  <Card.Img
+                    variant="top"
+                    src="https://via.placeholder.com/100"
+                    alt={item.nome}
+                    className={styles.cardImg}
                   />
                   <Card.Body>
                     <Card.Title>{item.nome}</Card.Title>
                     <Card.Text>{item.descricao}</Card.Text>
-                    <Card.Text className="text-muted">R$ {item.preco}</Card.Text>
-
+                    <Card.Text className="text-muted">R${item.preco}</Card.Text>
                     {item.vegano && (
                       <Card.Text className="text-success font-weight-bold">Vegano</Card.Text>
                     )}

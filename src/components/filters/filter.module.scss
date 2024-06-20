@@ -1,40 +1,55 @@
-.filterSection {
-    width: 100%;
-  }
-  
-  .filter {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .btnGroup {
-      width: 50%;
-    }
+ .searchDiv {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border: solid 1px;
+   border-radius: 25px;
+ }
 
-    .search {
-      width: 50%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .filter {
-      flex-direction: column;
-  
-      .btnGroup {
-        width: 100%;
-        overflow-x: auto; // Permite overflow horizontal
-        white-space: nowrap; // Impede quebra de linha no conteúdo
-  
-        button {
-          display: inline-block; // Exibe os botões em linha
-        }
-      }
+ .search {
+   border: none;
+   outline: none;
+   background-color: transparent;
+ }
 
-        .search {
-            margin-top: 5%;
-            width: 100%;
-        }
-    }
-  }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+   .filter {
+     flex-direction: column;
+
+     .btnGroup {
+       overflow-x: auto;
+       white-space: nowrap;
+       -webkit-overflow-scrolling: touch;
+       scrollbar-width: none;
+
+       &::-webkit-scrollbar {
+         display: none;
+       }
+
+       button {
+         display: inline-block;
+       }
+     }
+
+     .searchDiv {
+       width: 90%;
+       margin: 5%;
+     }
+   }
+ }
