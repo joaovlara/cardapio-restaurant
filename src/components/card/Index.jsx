@@ -4,6 +4,8 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import cardapio from "..//../data/cardapio";
 import styles from "./card.module.scss"
 
+import img from "..//..//assets/img/100.png"
+
 const CardGrid = () => {
   return (
     <Container>
@@ -15,20 +17,19 @@ const CardGrid = () => {
             </Col>
             {cardapio[categoriaKey].items.map((item) => (
               <Col key={item.id} sm={12} md={6} lg={4} className="mb-4">
-                <Card
-                  className={`${styles.customCard} rounded-0 card text-white bg-dark`}>
+                <Card>
                   <Card.Img
                     variant="top"
-                    src="https://via.placeholder.com/100"
+                    src={img}
                     alt={item.nome}
-                    className="card-img-top"
+                    className={styles.cardImg}
                   />
                   <Card.Body>
-                    <Card.Title className="card-title">{item.nome}</Card.Title>
-                    <Card.Text className="card-text">{item.descricao}</Card.Text>
-                    <Card.Text className="card-price">R${item.preco}</Card.Text>
+                    <Card.Title>{item.nome}</Card.Title>
+                    <Card.Text>{item.descricao}</Card.Text>
+                    <Card.Text className="text-muted">R${item.preco}</Card.Text>
                     {item.vegano && (
-                      <Card.Text className="card-vegano">Vegano</Card.Text>
+                      <Card.Text className="text-success font-weight-bold">Vegano</Card.Text>
                     )}
                   </Card.Body>
                 </Card>
