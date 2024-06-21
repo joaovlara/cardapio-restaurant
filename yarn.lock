@@ -755,7 +755,7 @@ binary-extensions@^2.0.0:
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.3.0.tgz#f6e14a97858d327252200242d4ccfe522c445522"
   integrity sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==
 
-bootstrap@5.3.3:
+bootstrap@^5.3.3:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.3.tgz#de35e1a765c897ac940021900fcbb831602bac38"
   integrity sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==
@@ -2980,10 +2980,10 @@ sass-graph@^4.0.1:
     scss-tokenizer "^0.4.3"
     yargs "^17.2.1"
 
-sass@^1.77.5:
-  version "1.77.5"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.5.tgz#5f9009820297521356e962c0bed13ee36710edfe"
-  integrity sha512-oDfX1mukIlxacPdQqNb6mV2tVCrnE+P3nVYioy72V5tlk56CPNcO4TCuFcaCRKKfJ1M3lH95CleRS+dVKL2qMg==
+sass@^1.77.6:
+  version "1.77.6"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.6.tgz#898845c1348078c2e6d1b64f9ee06b3f8bd489e4"
+  integrity sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"

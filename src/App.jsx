@@ -1,4 +1,5 @@
 import './App.scss'
+import './styles/_custom.scss'
 
 import Hero from './components/hero/Index'
 import Filter from './components/filters/Index'

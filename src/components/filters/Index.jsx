@@ -8,7 +8,7 @@ const Filter = () => {
     <section className={`d-flex justify-content-around align-items-center py-3 ${styles.filterSection}`}>
       <Container className={styles.filter}>
         <Row>
-          <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-around`}>
+          <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
             <Button
               variant="outline-danger"
               className="me-2">Vegano</Button>
