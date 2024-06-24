@@ -10,7 +10,7 @@ const Filter = () => {
         <Row>
           <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
             <Button
-              variant="outline-danger"
+              variant="primary"
               className="me-2">Vegano</Button>
             <Button
               variant="outline-danger"

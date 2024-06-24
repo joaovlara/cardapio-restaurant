@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 import cardapio from "..//../data/cardapio";
-import styles from "./card.module.scss"
 
 import img from "..//..//assets/img/100.png"
 
@@ -19,15 +18,14 @@ const CardGrid = () => {
               <Col key={item.id} sm={12} md={6} lg={4}
                 className="mb-4">
                 <Card
-                  className={`${styles.customCard} rounded-0`}>
+                  className={`rounded-0`}>
                   <Card.Img
                     variant="top"
                     src={img}
                     alt={item.nome}
-                    className={styles.cardImg}
+                    className={`rounded-0`}
                   />
-                  <Card.Body
-                    className={`{${styles.customCard}`}>
+                  <Card.Body>
                     <Card.Title>{item.nome}</Card.Title>
                     <Card.Text>{item.descricao}</Card.Text>
                     <Card.Text className="text-muted">R${item.preco}</Card.Text>
