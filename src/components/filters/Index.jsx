@@ -11,7 +11,7 @@ const Filter = () => {
           <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
             <Button
               variant="outline-primary"
-              className="me-2">Vegano</Button>
+              className={`${styles.btn} me-2`}>Vegano</Button>
             <Button
               variant="outline-primary"
               className="me-2">Lamen</Button>
@@ -28,7 +28,7 @@ const Filter = () => {
               variant="outline-primary"
               className="me-2">Option 6</Button>
           </Col>
-          <Col xs={12} md={4} className={`d-flex align-items-center order-md-2 border-secondary ${styles.searchDiv}`}>
+          <Col xs={12} md={4} className={`d-flex align-items-center order-md-2 border-light ${styles.searchDiv}`}>
             <input className={`${styles.search} me-2`}
               type="search"
               placeholder="Search"

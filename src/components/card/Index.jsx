@@ -10,7 +10,8 @@ const CardGrid = () => {
     <Container>
       <Row>
         {Object.keys(cardapio).map((categoriaKey) => (
-          <React.Fragment key={cardapio[categoriaKey].id}>
+          <React.Fragment 
+          key={cardapio[categoriaKey].id}>
             <Col sm={12}>
               <h2>{categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1)}</h2>
             </Col>
@@ -18,7 +19,9 @@ const CardGrid = () => {
               <Col key={item.id} sm={12} md={6} lg={4}
                 className="mb-4">
                 <Card
-                  className={`rounded-0`}>
+                  className={`rounded-0`}
+                  bg="dark"
+                  text="white">
                   <Card.Img
                     variant="top"
                     src={img}
@@ -27,8 +30,8 @@ const CardGrid = () => {
                   />
                   <Card.Body>
                     <Card.Title>{item.nome}</Card.Title>
-                    <Card.Text>{item.descricao}</Card.Text>
-                    <Card.Text className="text-muted">R${item.preco}</Card.Text>
+                    <Card.Text className="text-light">{item.descricao}</Card.Text>
+                    <Card.Text className="font-weight-bold">R${item.preco}</Card.Text>
                     {item.vegano && (
                       <Card.Text className="text-success font-weight-bold">Vegano</Card.Text>
                     )}
