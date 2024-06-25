@@ -3,7 +3,7 @@ import Filter from './components/filters/Index'
 import CardGrid from './components/card/Index'
 import Footer from './components/footer/Index'
 
-import './styles/custom.scss';
+import "./App.scss"
 
 function App() {
 
