@@ -10,22 +10,22 @@ const Filter = () => {
         <Row>
           <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
             <Button
-              variant="primary"
+              variant="outline-primary"
               className="me-2">Vegano</Button>
             <Button
-              variant="outline-danger"
+              variant="outline-primary"
               className="me-2">Lamen</Button>
             <Button
-              variant="outline-danger"
+              variant="outline-primary"
               className="me-2">Sushi</Button>
             <Button
-              variant="outline-danger"
+              variant="outline-primary"
               className="me-2">Temaki</Button>
             <Button
-              variant="outline-danger"
+              variant="outline-primary"
               className="me-2">Sobremesa</Button>
             <Button
-              variant="outline-danger"
+              variant="outline-primary"
               className="me-2">Option 6</Button>
           </Col>
           <Col xs={12} md={4} className={`d-flex align-items-center order-md-2 border-secondary ${styles.searchDiv}`}>
