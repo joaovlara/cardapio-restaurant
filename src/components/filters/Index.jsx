@@ -11,22 +11,22 @@ const Filter = () => {
           <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
             <Button
               variant="outline-primary"
-              className={`${styles.btn} me-2`}>Vegano</Button>
+              className="me-2 rounded-pill">Vegano</Button>
             <Button
               variant="outline-primary"
-              className="me-2">Lamen</Button>
+              className="me-2 rounded-pill">Lamen</Button>
             <Button
               variant="outline-primary"
-              className="me-2">Sushi</Button>
+              className="me-2 rounded-pill">Sushi</Button>
             <Button
               variant="outline-primary"
-              className="me-2">Temaki</Button>
+              className="me-2 rounded-pill">Temaki</Button>
             <Button
               variant="outline-primary"
-              className="me-2">Sobremesa</Button>
+              className="me-2 rounded-pill">Sobremesa</Button>
             <Button
               variant="outline-primary"
-              className="me-2">Option 6</Button>
+              className="me-2 rounded-pill">Option 6</Button>
           </Col>
           <Col xs={12} md={4} className={`d-flex align-items-center order-md-2 border-light ${styles.searchDiv}`}>
             <input className={`${styles.search} me-2`}
