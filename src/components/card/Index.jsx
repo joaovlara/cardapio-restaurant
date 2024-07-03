@@ -32,7 +32,7 @@ const CardGrid = () => {
                     <Card.Title>{item.nome}</Card.Title>
                     <Card.Text className="text-light">{item.descricao}</Card.Text>
                     <Card.Text className="font-weight-bold">R${item.preco}</Card.Text>
-                    {item.vegano && (
+                    {item.tipo === "vegano" && (
                       <Card.Text className="text-success font-weight-bold">Vegano</Card.Text>
                     )}
                   </Card.Body>
