@@ -8,7 +8,7 @@ const cardapio = {
                 descricao: "Caldo à base de molho de soja, macarrão, fatias de chashu (carne de porco), ovo cozido, cebolinha e nori (alga).",
                 img: "url_da_imagem_shoyu_lamen",
                 preco: 25.90,
-                tipo: "carne"
+                tipo: "carne, massa"
             },
             {
                 id: 102,
@@ -16,7 +16,7 @@ const cardapio = {
                 descricao: "Caldo à base de pasta de miso, macarrão, fatias de carne de porco, milho, brotos de bambu, nori e cebolinha.",
                 img: "url_da_imagem_miso_lamen",
                 preco: 27.50,
-                tipo: "carne"
+                tipo: "carne, massa"
             },
             {
                 id: 103,
@@ -24,7 +24,7 @@ const cardapio = {
                 descricao: "Caldo cremoso à base de ossos de porco, macarrão, chashu, ovo cozido, kikurage (cogumelos) e cebolinha.",
                 img: "url_da_imagem_tonkotsu_lamen",
                 preco: 29.90,
-                tipo: "carne"
+                tipo: "carne, massa"
             },
             {
                 id: 104,
@@ -32,7 +32,7 @@ const cardapio = {
                 descricao: "Caldo leve e claro à base de sal, macarrão, camarão, espinafre, nori e cebolinha.",
                 img: "url_da_imagem_shio_lamen",
                 preco: 26.50,
-                tipo: "camarão"
+                tipo: "camarão, massa"
             },
             {
                 id: 105,
@@ -40,7 +40,7 @@ const cardapio = {
                 descricao: "Caldo à base de vegetais, macarrão, tofu, brócolis, cenoura, cogumelos e cebolinha.",
                 img: "url_da_imagem_vegetariano_lamen",
                 preco: 24.90,
-                tipo: "vegano"
+                tipo: "vegano, massa"
             }
         ]
     },
@@ -52,14 +52,16 @@ const cardapio = {
                 nome: "Sushi de Salmão",
                 descricao: "Fatias de salmão fresco sobre arroz temperado com vinagre.",
                 img: "url_da_imagem_sushi_salmao",
-                preco: 8.50
+                preco: 8.50,
+                tipo: "peixe"
             },
             {
                 id: 202,
                 nome: "Sushi de Atum",
                 descricao: "Fatias de atum fresco sobre arroz temperado.",
                 img: "url_da_imagem_sushi_atum",
-                preco: 9.20
+                preco: 9.20,
+                tipo: "peixe"
             },
             {
                 id: 203,
@@ -67,14 +69,14 @@ const cardapio = {
                 descricao: "Camarão cozido sobre arroz temperado.",
                 img: "url_da_imagem_sushi_ebi",
                 preco: 7.90,
-                tipo: "camarão"
             },
             {
                 id: 204,
                 nome: "Sushi de Kani (Caranguejo)",
                 descricao: "Carne de caranguejo sobre arroz temperado.",
                 img: "url_da_imagem_sushi_kani",
-                preco: 8.90
+                preco: 8.90,
+                tipo: "frutos do mar"
             },
             {
                 id: 205,
@@ -95,7 +97,7 @@ const cardapio = {
                 descricao: "Pasteizinhos japoneses recheados com carne de porco e vegetais, servidos com molho de soja.",
                 img: "url_da_imagem_gyoza",
                 preco: 14.90,
-                tipo: "carne"
+                tipo: "carne de porco"
             },
             {
                 id: 302,
@@ -110,7 +112,8 @@ const cardapio = {
                 nome: "Sunomono",
                 descricao: "Salada de pepino com frutos do mar e molho agridoce.",
                 img: "url_da_imagem_sunomono",
-                preco: 12.00
+                preco: 12.00,
+                tipo: "frutos do mar"
             },
             {
                 id: 304,
@@ -118,7 +121,7 @@ const cardapio = {
                 descricao: "Legumes e camarões empanados e fritos, servidos com molho especial.",
                 img: "url_da_imagem_tempura",
                 preco: 18.50,
-                tipo: "camarão"
+                tipo: "camarao"
             },
             {
                 id: 305,
@@ -138,21 +141,24 @@ const cardapio = {
                 nome: "Temaki de Salmão",
                 descricao: "Cone de alga recheado com arroz, salmão cru e cebolinha.",
                 img: "url_da_imagem_temaki_salmao",
-                preco: 16.50
+                preco: 16.50,
+                tipo: "peixe"
             },
             {
                 id: 402,
                 nome: "Temaki de Atum",
                 descricao: "Cone de alga recheado com arroz, atum cru e cebolinha.",
                 img: "url_da_imagem_temaki_atum",
-                preco: 17.20
+                preco: 17.20,
+                tipo: "peixe"
             },
             {
                 id: 403,
                 nome: "Temaki Califórnia",
                 descricao: "Cone de alga recheado com arroz, kani, manga, pepino e maionese.",
                 img: "url_da_imagem_temaki_california",
-                preco: 15.90
+                preco: 15.90,
+                tipo: "frutos do mar"
             },
             {
                 id: 404,
@@ -160,7 +166,6 @@ const cardapio = {
                 descricao: "Cone de alga recheado com arroz, camarão empanado e alface.",
                 img: "url_da_imagem_temaki_camarao",
                 preco: 18.90,
-                tipo: "camarão"
             },
             {
                 id: 405,
