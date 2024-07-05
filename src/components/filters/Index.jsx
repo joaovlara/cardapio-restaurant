@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { CiSearch } from "react-icons/ci";
 
 import styles from './filter.module.scss';
 
-const Filter = () => {
-  const [filterTipo, setFilterTipo] = useState('');
-
+const Filter = ({ filterTipo, setFilterTipo }) => {
   const handleFilterClick = (tipo) => {
     if (filterTipo === tipo) {
       setFilterTipo(''); 
@@ -21,7 +18,7 @@ const Filter = () => {
       <Container className={styles.filter}>
         <Row>
           <Col xs={12} md={8} className={`${styles.btnGroup} d-flex justify-content-between`}>
-          <Button
+            <Button
               onClick={() => handleFilterClick('vegano')}
               variant="outline-primary"
               className="me-2 rounded-pill">Vegano</Button>
@@ -30,7 +27,7 @@ const Filter = () => {
               variant="outline-primary"
               className="me-2 rounded-pill">Carne</Button>
             <Button              
-              onClick={() => handleFilterClick('camarao')}
+              onClick={() => handleFilterClick('camarão')}
               variant="outline-primary"
               className="me-2 rounded-pill">Camarão</Button>
             <Button

@@ -15,7 +15,7 @@ function App() {
   return (
     <div className={`${styles.bg}`}>
       <Hero />
-      <Filter setFilterTipo={setFilterTipo} />
+      <Filter filterTipo={filterTipo} setFilterTipo={setFilterTipo} />
       <CardGrid filterTipo={filterTipo} />
       <Footer />
     </div>
