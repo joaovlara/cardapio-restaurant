@@ -15,7 +15,7 @@ const CardGrid = ({ filterTipo }) => {
               .map((item) => (
                 <Col key={item.id} sm={12} md={6} lg={4} className="mb-4">
                   <Card className={`rounded-0`} bg="dark" text="white">
-                    <Card.Img variant="top" src={img} alt={item.nome} className={`rounded-0`} />
+                    <Card.Img variant="top" src={item.img} alt={item.nome} className={`rounded-0`} />
                     <Card.Body>
                       <Card.Title>{item.nome}</Card.Title>
                       <Card.Text className="text-light">{item.descricao}</Card.Text>
